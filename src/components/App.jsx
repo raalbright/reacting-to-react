@@ -5,10 +5,13 @@ import React, { Component } from "react";
 // }
 
 class App extends Component {
+  state = {
+    text: 'Hello'
+  }
 
   render (props) {
     console.log(props);
-    return <h1>{ 'Hello ' + this.props.name}</h1>;
+    return <h1>{ this.state.text + ' '  + this.props.name}</h1>;
   }
  }
 
