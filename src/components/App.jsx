@@ -21,6 +21,12 @@ class App extends Component {
       hasLoaded: !this.state.hasLoaded
     });
   }
+
+  componentDidMount () {
+    this.setState({
+      hasLoaded: true
+    })
+  }
   
   
   render () {
